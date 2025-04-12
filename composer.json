@@ -1,0 +1,31 @@
+{
+    "name": "vfixtechnology/bagisto-cashfree",
+    "description": "Cashfree payment gateway for bagisto laravel open source ecommerce platform.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vfixtechnology\\Cashfree\\": "src/"
+        }
+    },
+	"extra": {
+        "laravel": {
+            "providers": [
+                "Vfixtechnology\\Cashfree\\Providers\\CashfreeServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "authors": [
+        {
+            "name": "Arun chahar",
+            "email": "info@vfixtechnology.com"
+        }
+    ],
+    "minimum-stability": "dev",
+
+    "scripts": {
+            "post-autoload-dump": [
+                "@php artisan vendor:publish --tag=public --force"
+            ]
+        }
+}
