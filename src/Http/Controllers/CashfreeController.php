@@ -207,7 +207,7 @@ class CashfreeController extends Controller
                 // Atomically claim the cart so only one concurrent callback can
                 // create the order. A concurrent request will see is_active = 0
                 // and bail out instead of creating a duplicate order.
-                $claimed = DB::table('carts')
+                $claimed = DB::table('cart')
                     ->where('id', $cart->id)
                     ->where('is_active', 1)
                     ->update(['is_active' => 0]);
