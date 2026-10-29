@@ -8,7 +8,7 @@ return [
         'sort'   => 4,
         'fields' => [
             [
-                'name'          => 'Cashfree',
+                'name'          => 'title',
                 'title'         => 'Title',
                 'type'          => 'text',
                 'validation'    => 'required',
@@ -16,7 +16,7 @@ return [
                 'locale_based'  => true,
             ],
             [
-                'name'          => 'Pay via card, upi, bank transfer',
+                'name'          => 'description',
                 'title'         => 'Description',
                 'type'          => 'textarea',
                 'channel_based' => false,
