@@ -62,6 +62,13 @@ return [
                 ],
             ],
             [
+                'name'          => 'webhook_url',
+                'title'         => 'Webhook URL (leave blank to use /cashfree/webhook)',
+                'type'          => 'text',
+                'channel_based' => false,
+                'locale_based'  => false,
+            ],
+            [
                 'name'          => 'active',
                 'title'         => 'Status',
                 'type'          => 'boolean',
